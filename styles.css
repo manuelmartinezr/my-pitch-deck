@@ -211,9 +211,30 @@ footer li {
 }
 
 .plot-slide {
-  flex: 1;
+  flex: 1 1 auto; 
   display: none;
 }
+
+.plot-slide iframe {
+  width: 100%;
+  height: 400px; /* default for desktop */
+  border: none;
+  border-radius: 12px;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+  .plot-slide iframe {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .plot-slide iframe {
+    height: 160px;
+  }
+}
+
 
 .plot-slide.active {
   display: block;
