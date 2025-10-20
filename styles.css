@@ -181,6 +181,7 @@ footer li {
 @media (max-width: 699px) {
   .pipeline-diagram {
     flex-direction: column;
+    gap: 8px;
   }
   .pipeline-arrow {
     transform: rotate(90deg); /* turns → into ↓ */
