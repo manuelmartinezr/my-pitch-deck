@@ -169,36 +169,21 @@ footer li {
   line-height: 1;
 }
 
-.pipeline-insight {
-  width: 100%;
-  background: linear-gradient(90deg, #004aad, #0074e4);
-  color: #fff;
-  border-radius: 12px;
-  padding: 14px;
-  text-align: center;
-  font-weight: 700;
-  margin-top: 6px;
-}
-
-.pipeline-insight small {
-  display: block;
-  font-weight: 400;
-  margin-top: 4px;
-  color: #e0f2fe;
-  font-size: 13px;
-}
-
 /* --- Responsivo --- */
 @media (min-width: 700px) {
   .pipeline-diagram {
     flex-wrap: nowrap;
   }
-  .pipeline-insight {
-    width: auto;
-    margin-left: 10px;
-  }
   .pipeline-arrow {
     font-size: 28px;
+  }
+}
+@media (max-width: 699px) {
+  .pipeline-diagram {
+    flex-direction: column;
+  }
+  .pipeline-arrow {
+    transform: rotate(90deg); /* turns → into ↓ */
   }
 }
 .slideshow {
