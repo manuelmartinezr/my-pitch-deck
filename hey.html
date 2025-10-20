@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pitch - Manuel Martínez</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <section style="font-family: Consolas, monospace;">
+      <div >Manuel Martínez</div>
+      <div><img src="yo.jpeg" alt="Tu foto aquí" /></div>
+      <div class="gold">Ingeniero de sistemas · Creador · Analista</div>
+    </section>
+
+    <section>
+      <div class="subt">Meta</div>
+      <div class="f1rem">Mejorar el seguimiento de KPIs clave para el rendimiento comercial.</div>
+    </section>
+
+    <section>
+      <div class="subt">Propuesta de valor</div>
+      <ul style="list-style-type: none;">
+        <li>
+          <span class="subt f1rem" > <span class="subt">1.</span> Automatización de procesos de datos</span>, implementando scripts en Python o
+          flujos ETL para facilitar la carga y exportación de información desde
+          bases de datos.
+          <div class="pipeline-diagram" aria-label="Flujo de datos: Base de datos / Excel → Script ETL en Python → Dashboard → Insights">
+            <div class="pipeline-step">Base de datos / Excel<br><small>Origen: ventas y descuentos</small></div>
+            <div class="pipeline-arrow">→</div>
+            <div class="pipeline-step">Script ETL en Python<br><small>Limpieza • Transformación • Carga</small></div>
+            <div class="pipeline-arrow">→</div>
+            <div class="pipeline-step">Dashboard<br><small>KPIs • Tendencias (Plotly)</small></div>
+          </div>
+        </li>
+
+        
+
+        <li>
+          <span class="subt f1rem"> <span class="subt">2.</span> Diseño y gestión de bases de datos SQL</span>, optimizando el almacenamiento y
+          acceso a la información comercial.
+        </li>
+
+        <li>
+          <span class="subt f1rem"> <span class="subt">3.</span> Desarrollo de reportes automáticos y dashboards</span>, que permitan el
+          seguimiento ágil de KPIs y la toma de decisiones basadas en datos.
+          <div id="plotly-slideshow" class="slideshow">
+            <button class="slide-btn prev" onclick="plusPlot(-1)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <div class="plot-slide active">
+              <iframe src="fig1.html" width="100%" height="500" frameborder="0"></iframe>
+            </div>
+            <div class="plot-slide">
+              <iframe src="fig2.html" width="100%" height="500" frameborder="0"></iframe>
+            </div>
+            <div class="plot-slide">
+              <iframe src="fig3.html" width="100%" height="500" frameborder="0"></iframe>
+            </div>
+            <button class="slide-btn next" onclick="plusPlot(1)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
+          </div>
+          <div style="font-size:0.8rem; text-align:center; color:#cdcdcd">Datos randomizados. Creado con Python; librerías Pandas, Numpy y Plotly. <a href="https://colab.research.google.com/drive/15e5KQxYlVSZfuKipGfFewSVuU99GlGvH?usp=sharing" target="_blank"">Código fuente</a></div>
+        </li>
+        <li>
+          <span class="subt f1rem"> <span class="subt">4.</span> Aplicación de técnicas de machine learning </span> para predecir tendencias de
+          ventas, evaluar efectividad de descuentos y descubrir oportunidades de
+          mejora comercial.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="subt">¿Por qué yo?</div>
+      <div>
+        Combino la analítica de negocios con herramientas digitales, lo que me
+        permite apoyar a mi equipo donde más se necesita.
+      </div>
+    </section>
+
+    <footer>
+      <div>Creado para la Creatón 2026-1</div>
+      <ul>
+        <li>(+57) 310 371 6820</li>
+        <li>manuelmartinezr18@gmail.com</li>
+      </ul>
+    </footer>
+  </main>
+  <script src="slideshow.js"></script>
+</body>
+</html>
