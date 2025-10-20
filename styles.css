@@ -225,13 +225,13 @@ footer li {
 /* Responsive adjustment */
 @media (max-width: 768px) {
   .plot-slide iframe {
-    height: 250px;
+    height: 350px;
   }
 }
 
 @media (max-width: 480px) {
   .plot-slide iframe {
-    height: 160px;
+    height: 260px;
   }
 }
 
